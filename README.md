@@ -185,7 +185,7 @@ Kennwort
 •••••••
 Passwort-Wiederholung
 •••••••
- | Operating System                | Version                              |
+ |                                 |                                      |
 | ------------------------------- | ------------------------------------ |
 | Verbindungseinstellungen        | [IPv4] 0.0.0.0 - Listen on all IPs   |
 | Port                            | 1883                                 |
