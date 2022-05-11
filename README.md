@@ -191,4 +191,20 @@ Passwort-Wiederholung
 | Port                            | 1883                                 |
 | Benutzer                        | mqtt                                 |
 | Kennwort                        | •••••••                              |
-| Password-Wiederholung           | •••••••                             |
+| Password-Wiederholung           | •••••••                              |
+
+ 
+ | Operating System | Version | Supported          |
+| ---------------- | ------- | ------------------ |
+| Ubuntu           | 14.04   | :red_circle:       |
+|                  | 16.04   | :red_circle: \*    |
+|                  | 18.04   | :white_check_mark: |
+|                  | 20.04   | :white_check_mark: |
+|                  | 22.04   | :white_check_mark: |
+| Debian           | 8       | :red_circle: \*    |
+|                  | 9       | :white_check_mark: |
+|                  | 10      | :white_check_mark: |
+|                  | 11      | :white_check_mark: |
+| CentOS           | 6       | :red_circle:       |
+|                  | 7       | :white_check_mark: |
+|                  | 8       | :white_check_mark: |
