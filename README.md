@@ -4,7 +4,7 @@ Setup Guide to setup Grafana, InfluxDB, Tasmota and IoBroker for Powerdraw monit
 # Install Guides for Grafana-InfluxDB-Tasmota and IoBroker
 
 ```bash
-bash <(curl -s https://pterodactyl-installer.se)
+sudo su
 ```
 
  #✅works for Ubuntu, Debian ...✅
