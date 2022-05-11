@@ -3,20 +3,25 @@ Setup Guide to setup Grafana, InfluxDB, Tasmota and IoBroker for Powerdraw monit
 ✅
 # Install Guides for Grafana-InfluxDB-Tasmota and IoBroker
 
+
+
+ #✅works for Ubuntu, Debian ...✅
+ 
 ```bash
       sudo su
 ```
 
- #✅works for Ubuntu, Debian ...✅
+```bash
+      apt-get update
+```
 
-sudo su
-
-apt-get update
-
-wget -qO- https://repos.influxdata.com/influxdb.key | sudo apt-key add -
+```bash
+      wget -qO- https://repos.influxdata.com/influxdb.key | sudo apt-key add -
 source /etc/os-release
 echo "deb https://repos.influxdata.com/debian $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/influxdb.list
 sudo apt-get install influxdb
+```
+
 
 
 service influxdb start
