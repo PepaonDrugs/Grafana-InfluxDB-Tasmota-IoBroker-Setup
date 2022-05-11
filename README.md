@@ -53,7 +53,9 @@ sudo apt-get install influxdb
 
 #configure the Influxdb config
 
-nano /etc/influxdb/influxdb.conf
+```bash
+      nano /etc/influxdb/influxdb.conf
+```
 
 [http]  
  enabled = true  
@@ -68,36 +70,54 @@ nano /etc/influxdb/influxdb.conf
  #save and Exit
 
  # restart Influxdb
-systemctl restart influxdb.service
+ 
+```bash
+      systemctl restart influxdb.service
+``` 
+
 
 
 #install Grafana
 
-apt-get install -y gnupg2 curl software-properties-common
+```bash
+      apt-get install -y gnupg2 curl software-properties-common
 curl https://packages.grafana.com/gpg.key | sudo apt-key add -
+``` 
 
-add-apt-repository "deb https://packages.grafana.com/oss/deb stable main"
+```bash
+      add-apt-repository "deb https://packages.grafana.com/oss/deb stable main"
+``` 
 
-apt-get update
+```bash
+      apt-get update
 apt-get -y install grafana
+``` 
 
-systemctl enable --now grafana-server
+```bash
+      systemctl enable --now grafana-server
+``` 
+
+
+
 
 #Node.js installation
 
-curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
+```bash
+      curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
+```
 
-sudo apt install -y nodejs
-
-reboot
-
-
-
+```bash
+      sudo apt install -y nodejs
+```
 
 
 #IoBroker Installation
 
-curl -sLf https://iobroker.net/install.sh | bash -
+```bash
+      curl -sLf https://iobroker.net/install.sh | bash -
+```
+
+
 
 #setup influxdb in Grafana 
 
