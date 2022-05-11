@@ -22,19 +22,34 @@ echo "deb https://repos.influxdata.com/debian $(lsb_release -cs) stable" | sudo 
 sudo apt-get install influxdb
 ```
 
+```bash
+      service influxdb start
+```
 
+```bash
+      apt install influxdb-client
+```
 
-service influxdb start
+```bash
+      influx
+```
 
-apt install influxdb-client
+```bash
+      CREATE USER "admin" WITH PASSWORD '<admin>' WITH ALL PRIVILEGES
+```
 
-influx
+```bash
+      CREATE DATABASE "iobroker"
+```
 
-CREATE USER "admin" WITH PASSWORD '<admin>' WITH ALL PRIVILEGES
-CREATE DATABASE "iobroker"
-GRANT ALL ON "iobroker" TO "admin"
+```bash
+      GRANT ALL ON "iobroker" TO "admin"
+```
 
-exit
+```bash
+      exit
+```
+
 
 #configure the Influxdb config
 
