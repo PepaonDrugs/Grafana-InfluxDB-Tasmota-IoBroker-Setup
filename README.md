@@ -8,26 +8,26 @@ Setup Guide to setup Grafana, InfluxDB, Tasmota and IoBroker for Powerdraw monit
  #✅works for Ubuntu, Debian ...✅
  
 ```bash
-      sudo su
+sudo su
 ```
 
 ```bash
-      apt-get update
+apt-get update
 ```
 
 ```bash
-      wget -qO- https://repos.influxdata.com/influxdb.key | sudo apt-key add -
+wget -qO- https://repos.influxdata.com/influxdb.key | sudo apt-key add -
 source /etc/os-release
 echo "deb https://repos.influxdata.com/debian $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/influxdb.list
 sudo apt-get install influxdb
 ```
 
 ```bash
-      service influxdb start
+service influxdb start
 ```
 
 ```bash
-      apt install influxdb-client
+apt install influxdb-client
 ```
 
 ```bash
@@ -35,26 +35,26 @@ sudo apt-get install influxdb
 ```
 
 ```bash
-      CREATE USER "admin" WITH PASSWORD '<admin>' WITH ALL PRIVILEGES
+CREATE USER "admin" WITH PASSWORD '<admin>' WITH ALL PRIVILEGES
 ```
 
 ```bash
-      CREATE DATABASE "iobroker"
+CREATE DATABASE "iobroker"
 ```
 
 ```bash
-      GRANT ALL ON "iobroker" TO "admin"
+GRANT ALL ON "iobroker" TO "admin"
 ```
 
 ```bash
-      exit
+exit
 ```
 
 
 #configure the Influxdb config
 
 ```bash
-      nano /etc/influxdb/influxdb.conf
+nano /etc/influxdb/influxdb.conf
 ```
 
 [http]  
@@ -72,7 +72,7 @@ sudo apt-get install influxdb
  # restart Influxdb
  
 ```bash
-      systemctl restart influxdb.service
+systemctl restart influxdb.service
 ``` 
 
 
@@ -80,21 +80,21 @@ sudo apt-get install influxdb
 #install Grafana
 
 ```bash
-      apt-get install -y gnupg2 curl software-properties-common
+apt-get install -y gnupg2 curl software-properties-common
 curl https://packages.grafana.com/gpg.key | sudo apt-key add -
 ``` 
 
 ```bash
-      add-apt-repository "deb https://packages.grafana.com/oss/deb stable main"
+add-apt-repository "deb https://packages.grafana.com/oss/deb stable main"
 ``` 
 
 ```bash
-      apt-get update
+apt-get update
 apt-get -y install grafana
 ``` 
 
 ```bash
-      systemctl enable --now grafana-server
+systemctl enable --now grafana-server
 ``` 
 
 
@@ -103,18 +103,18 @@ apt-get -y install grafana
 #Node.js installation
 
 ```bash
-      curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
+curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
 ```
 
 ```bash
-      sudo apt install -y nodejs
+sudo apt install -y nodejs
 ```
 
 
 #IoBroker Installation
 
 ```bash
-      curl -sLf https://iobroker.net/install.sh | bash -
+curl -sLf https://iobroker.net/install.sh | bash -
 ```
 
 
