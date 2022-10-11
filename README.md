@@ -51,7 +51,7 @@ exit
 ```
 
 
-#configure the Influxdb config
+# configure the Influxdb config
 
 ```bash
 nano /etc/influxdb/influxdb.conf
@@ -100,7 +100,7 @@ systemctl enable --now grafana-server
 
 
 
-#Node.js installation
+# Node.js installation
 
 ```bash
 curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
@@ -119,7 +119,7 @@ curl -sLf https://iobroker.net/install.sh | bash -
 
 
 
-#setup influxdb in Grafana 
+# setup influxdb in Grafana 
 
 URL http://your.localip.com:8086 #configer your ip here
 
@@ -145,11 +145,11 @@ http://your.localip.com:8081/
 | DB Name            | iobroker           |
 
 
-#safe and Exit
+save and Exit
 
-#Configuer mqtt with Tasmota and Sofnoff
+# Configuer mqtt with Tasmota and Sofnoff
 
-#Tasmota Setup
+# Tasmota Setup
  |                                 |                    |
 | ------------------------------- | ------------------ |
 | MQTT parameters Host ()         | your.localip.com   |
@@ -165,7 +165,7 @@ http://your.localip.com:8081/
 
 
 
-#Sofnoff Setup 
+# Sofnoff Setup 
 
 # Install Sofnoff adapter from the instances tab
 #configure Sofnoff in Iobroker
