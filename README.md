@@ -5,7 +5,7 @@ Setup Guide to setup Grafana, InfluxDB, Tasmota and IoBroker for Powerdraw monit
 
 
 
- #✅works for Ubuntu, Debian ...✅
+ # ✅works for Ubuntu, Debian ...✅
  
 ```bash
 sudo su
