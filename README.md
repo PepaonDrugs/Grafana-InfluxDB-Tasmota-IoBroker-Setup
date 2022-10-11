@@ -31,7 +31,7 @@ apt install influxdb-client
 ```
 
 ```bash
-      influx
+influx
 ```
 
 ```bash
